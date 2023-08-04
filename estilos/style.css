@@ -27,9 +27,15 @@ section#center{
 
 main {
     background-color: #ff8245;
-    padding: 50px;
+    padding: 40px;
     margin: auto;
     border-radius: 15px 15px 0px 0px;
+}
+
+input {
+    position: relative;
+    left: -25px;
+    padding: 10px 0px;
 }
 
 button {
@@ -37,7 +43,9 @@ button {
     border: 2px solid #ff8245;
     width: 50px;
     margin-right: -5px;
+    cursor: pointer;
 }
+
 button.acoes {
     background-color: #3751cf;
 }
