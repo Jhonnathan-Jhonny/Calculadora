@@ -2,6 +2,7 @@ let resultado = document.getElementById('res');
 let botoesNumericos = document.getElementsByClassName('numero');
 let botoesOperacoes = document.getElementsByClassName('operacoes');
 let botaoLimpar = document.getElementById('limpar');
+let igual = document.getElementById('igual');
 
 let numero = '';
 
@@ -45,4 +46,11 @@ function calcularResultado() {
   } catch (error) {
     resultado.value = 'Erro';
   }
+}
+
+function corEntrar(){
+  igual.style = 'background-color: #ff8245'
+}
+function corSair(){
+  igual.style = 'background-color: #3751cf'
 }
