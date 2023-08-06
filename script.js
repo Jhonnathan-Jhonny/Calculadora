@@ -1,10 +1,12 @@
 let resultado = document.getElementById('res');
+let resAutomatico = document.getElementById('automatico')
 let botoesNumericos = document.getElementsByClassName('numero');
 let botoesOperacoes = document.getElementsByClassName('operacoes');
 let botaoLimpar = document.getElementById('limpar');
 let igual = document.getElementById('igual');
 
 let numero = '';
+let calculo = '';
 
 // Adicionando ouvinte de evento a todos os botões
 document.querySelectorAll('button').forEach(botao => {
@@ -24,14 +26,15 @@ document.querySelectorAll('button').forEach(botao => {
 });
 
 function adicionarCaractere(caractere) {
-  ultimo = numero;
   numero += caractere;
   resultado.value = numero;
+  calcularResultadoAutomatico()
 }
 
 function limparCalculadora() {
   numero = '';
   resultado.value = '';
+  resAutomatico.value = '';
 }
 
 function apagarUltimoCaracter(){
@@ -39,12 +42,22 @@ function apagarUltimoCaracter(){
   resultado.value = numero
 }
 
-function calcularResultado() {
+function calcularResultadoAutomatico() {
   try {
     numero = math.evaluate(numero);
-    resultado.value = numero;
+    resAutomatico.value = numero;
   } catch (error) {
-    resultado.value = 'Erro';
+    resultado.value = numero;
+  }
+}
+
+function calcularResultado(){
+  try {
+    numero = math.evaluate(numero)
+    resultado.value += '='+numero
+  }
+  catch {
+    resultado.value = 'ERRO'
   }
 }
 

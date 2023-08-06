@@ -29,7 +29,7 @@ main {
     background-color: #ff8245;
     padding: 40px;
     margin: auto;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 input {
@@ -44,10 +44,12 @@ button {
     width: 50px;
     margin-right: -5px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 button.acoes {
     background-color: #3751cf;
+    padding: 20px 0px 20px 0px;
 }
 
 button.numero{
@@ -56,11 +58,11 @@ button.numero{
 button#zero{
     background:linear-gradient(to top,#ff8375, #f03e2a);
     width: 100px;
-    border-radius: 0px 0px 0px 15px;
+    border-radius: 0px 0px 0px 10px;
 }
 button.operacoes {
     background-color: #ffa0a1;
 }
 button#igual {
-    border-radius: 0px 0px 15px 0px;
+    border-radius: 0px 0px 10px 0px;
 }

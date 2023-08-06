@@ -12,11 +12,18 @@
     </header>
     <section id="center">
         <main>
-            <input type="text" id="res" readonly>
+            <div>
+                <label for="res">Cálculo</label>
+                <input type="text" id="res" readonly>
+            </div>
+            <div>
+                <label for="automatico">=</label>
+                <input type="text" id="automatico" readonly>
+            </div>
         </main>
         <div>
-            <button type="button" class="acoes" id="limpar">CE</button>
-            <button type="button" class="acoes">AC</button>
+            <button type="button" class="acoes" id="limpar"><p>CE</p></button>
+            <button type="button" class="acoes"><p>AC</p></button>
             <button type="button" class="operacoes">%</button>
             <button type="button" class="operacoes">+</button>
             <br>
@@ -36,7 +43,7 @@
             <button type="button" class="operacoes">/</button>
             <br>
             <button type="button" class="numero" id="zero">0</button>
-            <button type="button" class="numero">,</button>
+            <button type="button" class="numero">.</button>
             <button type="button" class="acoes" id="igual" onclick="calcular()" onmouseenter="corEntrar()" onmouseout="corSair()">=</button>
         </div>
     </section>
