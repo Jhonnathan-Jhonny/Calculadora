@@ -27,19 +27,23 @@ document.querySelectorAll('button').forEach(botao => {
 
 function adicionarCaractere(caractere) {
   numero += caractere;
-  resultado.value = numero;
+  calculo += caractere;
+  resultado.value = calculo;
   calcularResultadoAutomatico()
 }
 
 function limparCalculadora() {
   numero = '';
   resultado.value = '';
+  calculo = ''
   resAutomatico.value = '';
 }
 
 function apagarUltimoCaracter(){
-  numero = numero.slice(0,-1);
-  resultado.value = numero
+  calculo = calculo.slice(0,-1);
+  numero = calculo
+  resultado.value = calculo
+  calcularResultadoAutomatico();
 }
 
 function calcularResultadoAutomatico() {
@@ -47,7 +51,7 @@ function calcularResultadoAutomatico() {
     numero = math.evaluate(numero);
     resAutomatico.value = numero;
   } catch (error) {
-    resultado.value = numero;
+    resultado.value = calculo;
   }
 }
 

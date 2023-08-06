@@ -9,46 +9,49 @@
 </head>
 <body>
     <header>
+        <h1>Calculadora</h1>
     </header>
-    <section id="center">
-        <main>
-            <div>
-                <label for="res">Cálculo</label>
-                <input type="text" id="res" readonly>
+    <main>
+        <section id="center">
+            <div id="calculos">
+                <div>
+                    <label for="res">Cálculo</label>
+                    <input type="text" id="res" readonly>
+                </div>
+                <div>
+                    <label for="automatico">=</label>
+                    <input type="text" id="automatico" readonly>
+                </div>
             </div>
             <div>
-                <label for="automatico">=</label>
-                <input type="text" id="automatico" readonly>
+                <button type="button" class="acoes" id="limpar"><p>CE</p></button>
+                <button type="button" class="acoes"><p>AC</p></button>
+                <button type="button" class="operacoes">%</button>
+                <button type="button" class="operacoes">+</button>
+                <br>
+                <button type="button" class="numero">1</button>
+                <button type="button" class="numero">2</button>
+                <button type="button" class="numero">3</button>
+                <button type="button" class="operacoes">-</button>
+                <br>
+                <button type="button" class="numero">4</button>
+                <button type="button" class="numero">5</button>
+                <button type="button" class="numero">6</button>
+                <button type="button" class="operacoes">*</button>
+                <br>
+                <button type="button" class="numero">7</button>
+                <button type="button" class="numero">8</button>
+                <button type="button" class="numero">9</button>
+                <button type="button" class="operacoes">/</button>
+                <br>
+                <button type="button" class="numero" id="zero">0</button>
+                <button type="button" class="numero">.</button>
+                <button type="button" class="acoes" id="igual" onclick="calcular()" onmouseenter="corEntrar()" onmouseout="corSair()">=</button>
             </div>
-        </main>
-        <div>
-            <button type="button" class="acoes" id="limpar"><p>CE</p></button>
-            <button type="button" class="acoes"><p>AC</p></button>
-            <button type="button" class="operacoes">%</button>
-            <button type="button" class="operacoes">+</button>
-            <br>
-            <button type="button" class="numero">1</button>
-            <button type="button" class="numero">2</button>
-            <button type="button" class="numero">3</button>
-            <button type="button" class="operacoes">-</button>
-            <br>
-            <button type="button" class="numero">4</button>
-            <button type="button" class="numero">5</button>
-            <button type="button" class="numero">6</button>
-            <button type="button" class="operacoes">*</button>
-            <br>
-            <button type="button" class="numero">7</button>
-            <button type="button" class="numero">8</button>
-            <button type="button" class="numero">9</button>
-            <button type="button" class="operacoes">/</button>
-            <br>
-            <button type="button" class="numero" id="zero">0</button>
-            <button type="button" class="numero">.</button>
-            <button type="button" class="acoes" id="igual" onclick="calcular()" onmouseenter="corEntrar()" onmouseout="corSair()">=</button>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
-
+        <p>Site criado por <a href="https://www.instagram.com/jhonnathan_jhonny/?hl=pt-br" target="_blank">Jhonnathan</a> com objetivos de estudo.</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.2/math.js"></script>
     <script src="script.js"></script>

@@ -7,7 +7,12 @@
 }
 
 body {
-    background-color: #a9b4ec;
+    background: linear-gradient(to top,#3751cf,#7285e2c7);
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
 }
 
 section{
@@ -25,10 +30,11 @@ section#center{
     transform: translate(-50%,-50%);
 }
 
-main {
+div#calculos {
     background-color: #ff8245;
     padding: 40px;
     margin: auto;
+    text-align: center;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -39,7 +45,7 @@ input {
 }
 
 button {
-    padding: 20px;
+    padding: 19px 0px 20px 0px;
     border: 2px solid #ff8245;
     width: 50px;
     margin-right: -5px;
@@ -49,7 +55,6 @@ button {
 
 button.acoes {
     background-color: #3751cf;
-    padding: 20px 0px 20px 0px;
 }
 
 button.numero{
@@ -65,4 +70,20 @@ button.operacoes {
 }
 button#igual {
     border-radius: 0px 0px 10px 0px;
+}
+
+footer {
+    background-color: #1334db;
+    padding: 10px;
+    margin-top: 88.5vh;
+    text-align: center;
+}
+
+footer a {
+    color: #f03e2a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: blue;
 }
